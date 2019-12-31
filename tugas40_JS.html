@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Belajar Javascript - NIOMIC</title>
+</head>
+
+<body>
+  <button type="button" onclick="fungsiKlik()" name="button">Jalankan</button>
+  <br />
+  <br />
+  <hr />
+  <b>Base URI</b> Property : <br />
+  <p id="hasil1">contoh</p>
+  <hr />
+  <b>Body</b> Property : <br />
+  <p id="hasil2">contoh</p>
+  <hr />
+  <b>Create</b> Element : <br /><br />
+
+  <script type="text/javascript">
+    function fungsiKlik() {
+      var a = document.baseURI;
+      document.getElementById('hasil1').innerHTML = a;
+
+      document.body.style.backgroundColor = "green";
+      document.getElementById("hasil2").innerHTML = "color: green";
+
+      var b = document.createElement("input");
+      document.body.appendChild(b);
+    }
+  </script>
+</body>
+
+</html>
